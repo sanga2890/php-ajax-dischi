@@ -15,7 +15,6 @@
                 <p><?php echo $value['year'] ?></p>
                 <p><?php echo $value['genre'] ?></p>
             </div>
-
         <?php } ?>
     </body>
 </html>
