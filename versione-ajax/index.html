@@ -17,19 +17,22 @@
             </div>
         </header>
         <main>
-            <div class="container playlist">
-                <!-- creo il template di handlebars che verrà poi compilato dalle isruzioni che riceverà dal file .js collegato -->
-                <script id="my-template" type="text/x-handlebars-template">
-                    <div class="scheda">
-                        <img src="{{poster}}" alt="{{title}}">
-                        <h1>{{title}}</h1>
-                        <h2>{{author}}</h2>
-                        <p>{{year}}</p>
-                        <p>{{genre}}</p>
-                    </div>
-                </script>
-            </div>
+            <div class="container playlist"></div>
 
+
+<!-- creo il template di handlebars che verrà poi compilato dalle isruzioni che riceverà dal file .js collegato -->
+        <script id="disk-template" type="text/x-handlebars-template">
+            <div class="scheda">
+                <img src="{{poster}}" alt="{{title}}">
+                <h1>{{title}}</h1>
+                <h2>{{author}}</h2>
+                <p>{{year}}</p>
+                <p>{{genre}}</p>
+            </div>
+        </script>
+        <script id="artist-template" type="text/x-handlebars-template">
+            <option value="{{author}}">{{author}}</option>
+        </script>
 
 
 

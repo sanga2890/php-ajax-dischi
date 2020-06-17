@@ -20,15 +20,16 @@ $(document).ready(function() {
         for (var i = 0; i < dischi.length; i++) {
             var disco = dischi[i];
             // richiamo la funzione per la stampa in pagina;
-            stampa(disco);
+            stampa_generale(disco);
+            stampa_option(disco);
         }
     }
 
     // creo la funzione per la stampa in pagina con handlebars;
-    function stampa(info) {
+    function stampa_generale(info) {
 
         // dichiaro le variabili per integrare handlebars;
-        var source   = $('#my-template').html();
+        var source   = $('#disk-template').html();
         var template = Handlebars.compile(source);
 
         var context = {
@@ -43,5 +44,21 @@ $(document).ready(function() {
 
         // appendo il tutto nel contenitore con classe playlist;
         $('.playlist').append(html);
+    }
+
+    function stampa_option(artist) {
+
+        // dichiaro le variabili per integrare handlebars;
+        var source   = $('#artist-template').html();
+        var template = Handlebars.compile(source);
+
+        var context = {
+            'author': artist.author
+        }
+        var html  = template(context);
+
+        // appendo il tutto nel contenitore con classe playlist;
+        $('.artist').append(html);
+
     }
 });
