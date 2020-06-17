@@ -1,4 +1,11 @@
+main {
+    background: $background_main;
+    padding-top: 180px;
+}
+
+
 .playlist {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }

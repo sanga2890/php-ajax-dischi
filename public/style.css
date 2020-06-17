@@ -9,26 +9,69 @@
   margin: 0 auto;
 }
 
+.header {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 100px;
+}
+
+header {
+  background: linear-gradient(45deg, #B1E0B0, #ACB4E7);
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 22px 68px -18px rgba(0, 0, 0, 0.86);
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  color: #fff;
+}
+
 .scheda {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: grey;
+  background: linear-gradient(45.34deg, #355C7D 5.66%, #6C5B7B 49.09%, #C06C84 93.43%);
   margin: 20px;
-  padding: 10px;
-  max-width: 220px;
+  padding: 15px;
+  width: 240px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .scheda img {
   width: 200px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+  margin-bottom: 10px;
 }
 
 .scheda h1 {
-  font-size: 20px;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.scheda h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+main {
+  background: linear-gradient(45.34deg, #FBB13C 5.66%, #FF7A72 48.62%, #FF7A72 94.35%);
+  padding-top: 180px;
 }
 
 .playlist {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
