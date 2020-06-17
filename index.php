@@ -1,4 +1,4 @@
-<?php require 'db/dischi.php'; ?>
+<?php require 'versione-php/db/dischi.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -12,10 +12,10 @@
         <header>
             <div class="header container">
                 <img src="img/logo.png" alt="">
-                <select class="genre" name="genre">
-                    <option value="">All genre</option>
+                <select class="artist" name="artist">
+                    <option value="">Artist</option>
                 </select>
-            </div>    
+            </div>
         </header>
         <main>
             <div class="container playlist">

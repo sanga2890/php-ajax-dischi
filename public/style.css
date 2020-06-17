@@ -25,6 +25,7 @@ header {
   position: fixed;
   width: 100%;
   box-shadow: 0px 22px 68px -40px rgba(0, 0, 0, 0.86);
+  z-index: 10;
 }
 
 body {
@@ -54,6 +55,7 @@ main {
   text-align: center;
   border-radius: 10px;
   box-shadow: 8px 0px 33px -6px rgba(0, 0, 0, 0.86);
+  z-index: 0;
 }
 
 .scheda:hover {
