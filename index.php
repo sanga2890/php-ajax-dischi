@@ -8,7 +8,14 @@
     </head>
     <body>
         <?php foreach ($dischi as $value) { ?>
-            <h1><?php echo $value['title'] ?></h1>
+            <div class="scheda">
+                <img src="<?php echo $value['poster'] ?>" alt="<?php echo $value['title'] ?>">
+                <h1><?php echo $value['title'] ?></h1>
+                <h2><?php echo $value['author'] ?></h2>
+                <p><?php echo $value['year'] ?></p>
+                <p><?php echo $value['genre'] ?></p>
+            </div>
+
         <?php } ?>
     </body>
 </html>
